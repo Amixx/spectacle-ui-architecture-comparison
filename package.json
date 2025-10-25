@@ -1,0 +1,24 @@
+{
+  "name": "spectacle-ui-comparison",
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:css-headless": "cd apps/css-headless-base && bun run dev & cd apps/css-headless-red && bun run dev --port 5174",
+    "dev:css-styled": "cd apps/css-styled && bun run dev",
+    "dev:tailwind-headless": "cd apps/tailwind-headless && bun run dev",
+    "dev:tailwind-styled": "cd apps/tailwind-styled && bun run dev",
+    "dev:vanilla-extract-headless": "cd apps/vanilla-extract-headless && bun run dev",
+    "dev:vanilla-extract-styled": "cd apps/vanilla-extract-styled && bun run dev",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "globals": "^16.4.0",
+    "typescript-eslint": "^8.45.0"
+  }
+}
