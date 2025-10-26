@@ -1,15 +1,44 @@
-# spectacle-ui-architecture-comparison
+# Spectacle UI Architecture Comparison
 
-To install dependencies:
+A comparison of different UI architecture approaches using React: headless vs styled components, with CSS, Tailwind, and Vanilla Extract styling solutions.
+
+## Installation
 
 ```bash
 bun install
 ```
 
-To run:
+## Development
+
+Run specific architecture implementations:
 
 ```bash
-bun run index.ts
+# CSS with headless components
+bun run dev:css-headless
+
+# CSS with styled components
+bun run dev:css-styled
+
+# Tailwind with headless components
+bun run dev:tailwind-headless
+
+# Tailwind with styled components
+bun run dev:tailwind-styled
+
+# Vanilla Extract with headless components
+bun run dev:vanilla-extract-headless
+
+# Vanilla Extract with styled components
+bun run dev:vanilla-extract-styled
 ```
 
-This project was created using `bun init` in bun v1.3.0. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+## Linting
+
+```bash
+bun run lint:fix
+```
+
+## Project Structure
+
+- `apps/` - Demo applications for each architecture approach
+- `packages/` - Shared UI component libraries (headless and styled variants)
