@@ -10,6 +10,7 @@
     "@vanilla-extract/css": "^1.16.2"
   },
   "devDependencies": {
-    "@types/react": "^19.1.16"
+    "@types/react": "^19.1.16",
+    "tsconfig": "workspace:*"
   }
 }

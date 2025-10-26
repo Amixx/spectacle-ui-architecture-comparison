@@ -1,16 +1,4 @@
 {
-  "compilerOptions": {
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "lib": ["ES2020"],
-    "module": "ESNext",
-    "moduleDetection": "force",
-    "moduleResolution": "Bundler",
-    "noEmit": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "ES2020",
-    "useDefineForClassFields": true
-  },
+  "extends": "tsconfig/node.json",
   "include": ["vite.config.ts"]
 }

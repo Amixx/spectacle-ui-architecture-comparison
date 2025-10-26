@@ -28,6 +28,7 @@
         "@types/react-dom": "^19.1.9",
         "@vitejs/plugin-react": "^5.0.4",
         "globals": "^16.4.0",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
         "vite": "^7.1.7",
       },
@@ -48,6 +49,7 @@
         "@types/react-dom": "^19.1.9",
         "@vitejs/plugin-react": "^5.0.4",
         "globals": "^16.4.0",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
         "vite": "^7.1.7",
       },
@@ -69,6 +71,7 @@
         "@types/react-dom": "^19.1.9",
         "@vitejs/plugin-react": "^5.0.4",
         "globals": "^16.4.0",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
         "vite": "^7.1.7",
       },
@@ -89,6 +92,7 @@
         "@types/react-dom": "^19.1.9",
         "@vitejs/plugin-react": "^5.0.4",
         "globals": "^16.4.0",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
         "vite": "^7.1.7",
       },
@@ -112,6 +116,7 @@
         "globals": "^16.4.0",
         "postcss": "^8.5.1",
         "tailwindcss": "^3.4.17",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
         "vite": "^7.1.7",
       },
@@ -135,6 +140,7 @@
         "globals": "^16.4.0",
         "postcss": "^8.5.1",
         "tailwindcss": "^3.4.17",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
         "vite": "^7.1.7",
       },
@@ -159,6 +165,7 @@
         "globals": "^16.4.0",
         "postcss": "^8.5.1",
         "tailwindcss": "^3.4.17",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
         "vite": "^7.1.7",
       },
@@ -183,6 +190,7 @@
         "globals": "^16.4.0",
         "postcss": "^8.5.1",
         "tailwindcss": "^3.4.17",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
         "vite": "^7.1.7",
       },
@@ -199,6 +207,7 @@
       "devDependencies": {
         "@react-types/shared": "^3.32.1",
         "@types/react": "^19.1.16",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
       },
     },
@@ -214,6 +223,7 @@
       "devDependencies": {
         "@react-types/shared": "^3.32.1",
         "@types/react": "^19.1.16",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
       },
     },
@@ -227,6 +237,7 @@
       },
       "devDependencies": {
         "@types/react": "^19.1.16",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
       },
     },
@@ -241,6 +252,7 @@
       },
       "devDependencies": {
         "@types/react": "^19.1.16",
+        "tsconfig": "workspace:*",
       },
     },
     "apps/vanilla-extract-headless-base": {
@@ -261,6 +273,7 @@
         "@vanilla-extract/vite-plugin": "^4.0.18",
         "@vitejs/plugin-react": "^5.0.4",
         "globals": "^16.4.0",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
         "vite": "^7.1.7",
       },
@@ -283,6 +296,7 @@
         "@vanilla-extract/vite-plugin": "^4.0.18",
         "@vitejs/plugin-react": "^5.0.4",
         "globals": "^16.4.0",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
         "vite": "^7.1.7",
       },
@@ -305,6 +319,7 @@
         "@vanilla-extract/vite-plugin": "^4.0.18",
         "@vitejs/plugin-react": "^5.0.4",
         "globals": "^16.4.0",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
         "vite": "^7.1.7",
       },
@@ -327,9 +342,14 @@
         "@vanilla-extract/vite-plugin": "^4.0.18",
         "@vitejs/plugin-react": "^5.0.4",
         "globals": "^16.4.0",
+        "tsconfig": "workspace:*",
         "typescript": "~5.9.3",
         "vite": "^7.1.7",
       },
+    },
+    "packages/tsconfig": {
+      "name": "tsconfig",
+      "version": "0.0.0",
     },
   },
   "packages": {
@@ -1178,6 +1198,8 @@
     "ts-api-utils": ["ts-api-utils@2.1.0", "", { "peerDependencies": { "typescript": ">=4.8.4" } }, "sha512-CUgTZL1irw8u29bzrOD/nH85jqyc74D6SshFgujOIA7osm2Rz7dYH77agkx7H4FBNxDq7Cjf+IjaX/8zwFW+ZQ=="],
 
     "ts-interface-checker": ["ts-interface-checker@0.1.13", "", {}, "sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA=="],
+
+    "tsconfig": ["tsconfig@workspace:packages/tsconfig"],
 
     "tslib": ["tslib@2.8.1", "", {}, "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w=="],
 

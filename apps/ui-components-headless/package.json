@@ -14,6 +14,7 @@
   "devDependencies": {
     "@react-types/shared": "^3.32.1",
     "@types/react": "^19.1.16",
+    "tsconfig": "workspace:*",
     "typescript": "~5.9.3"
   }
 }

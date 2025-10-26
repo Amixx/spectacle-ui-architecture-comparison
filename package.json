@@ -2,7 +2,8 @@
   "name": "spectacle-ui-comparison",
   "version": "1.0.0",
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ],
   "scripts": {
     "dev:css-headless": "cd apps/css-headless-base && bun run dev & cd apps/css-headless-red && bun run dev",
