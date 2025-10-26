@@ -29,6 +29,7 @@ export function Select<T extends object>(
     <BaseSelect
       {...props}
       className={selectStyles.container}
+      labelClassName={selectStyles.label}
       buttonClassName={selectStyles.button}
       listBoxClassName={selectStyles.listBox}
       optionClassName={selectStyles.option}

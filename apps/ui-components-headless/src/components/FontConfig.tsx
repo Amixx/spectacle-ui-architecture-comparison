@@ -17,7 +17,8 @@ export function FontConfig({
   onFontConfigChange, 
   Input, 
   Select, 
-  className 
+  className,
+  gridClassName
 }: {
   textValue: string;
   onTextChange: (value: string) => void;
@@ -41,6 +42,7 @@ export function FontConfig({
   }>;
   Select: React.ComponentType<SelectProps>;
   className?: string;
+  gridClassName?: string;
 }) {
   const handleConfigChange = (field: 'family' | 'weight' | 'size' | 'spacing', value: Key | null) => {
     if (value !== null) {
@@ -57,7 +59,7 @@ export function FontConfig({
         placeholder="Enter text here..."
       />
       
-      <div className="font-controls">
+      <div className={gridClassName}>
         <Select
           label="Font Family"
           selectedKey={fontConfig.family}

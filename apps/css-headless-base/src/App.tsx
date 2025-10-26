@@ -64,6 +64,7 @@ function App() {
           Input={Skin.Input}
           Select={Skin.Select}
           className="font-config"
+          gridClassName="font-config-grid"
         />
 
         <div className="config-output">

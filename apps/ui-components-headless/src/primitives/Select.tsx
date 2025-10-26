@@ -5,6 +5,7 @@ import { useRef } from "react";
 export function Select<T extends object>(
   props: AriaSelectProps<T> & {
     className?: string;
+    labelClassName?: string;
     buttonClassName?: string;
     listBoxClassName?: string;
     optionClassName?: string;
@@ -42,7 +43,7 @@ export function Select<T extends object>(
 
   return (
     <div className={props.className}>
-      {props.label && <label {...labelProps}>{props.label}</label>}
+      {props.label && <label {...labelProps} className={props.labelClassName}>{props.label}</label>}
       <HiddenSelect
         state={state}
         triggerRef={ref}

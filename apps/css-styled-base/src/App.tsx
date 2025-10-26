@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Item } from "react-stately";
-import { FontConfig } from "ui-components-headless";
-import { Button, Input, Select } from "ui-components-styled";
+import { Button, Input, Select, FontConfig } from "ui-components-styled";
 import "./theme.css";
 import "./reset.css";
 import "./App.css";
@@ -61,9 +60,6 @@ function App() {
           onTextChange={setTextValue}
           fontConfig={fontConfig}
           onFontConfigChange={setFontConfig}
-          Input={Input}
-          Select={Select}
-          className="font-config"
         />
 
         <div className="config-output">

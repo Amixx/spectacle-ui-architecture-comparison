@@ -77,10 +77,22 @@ body {
   max-width: 800px;
 }
 
-.font-controls {
+.font-config-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: 1fr;
   gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .font-config-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .font-config-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .config-output {
@@ -96,6 +108,6 @@ body {
 
 .config-output pre {
   margin: 0;
-  font-family: 'Monaco', 'Courier New', monospace;
+  font-family: "Monaco", "Courier New", monospace;
   font-size: 13px;
 }

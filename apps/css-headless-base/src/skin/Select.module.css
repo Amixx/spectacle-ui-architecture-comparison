@@ -5,6 +5,13 @@
   gap: var(--spacing-xs);
 }
 
+.label {
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
 .button {
   font-family: var(--font-family);
   font-size: var(--font-size-base);

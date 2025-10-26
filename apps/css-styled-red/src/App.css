@@ -73,12 +73,6 @@ body {
   max-width: 800px;
 }
 
-.font-controls {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 12px;
-}
-
 .config-output {
   margin-top: 24px;
   padding: 16px;
