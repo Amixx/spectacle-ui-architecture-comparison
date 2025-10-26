@@ -29,8 +29,10 @@ function App() {
 
         <div className="demo-group">
           <h3>Button</h3>
-          <Button onPress={() => alert("Clicked!")}>Click Me</Button>
-          <Button isDisabled>Disabled</Button>
+          <div className="button-group">
+            <Button onPress={() => alert("Clicked!")}>Click Me</Button>
+            <Button isDisabled>Disabled</Button>
+          </div>
         </div>
 
         <div className="demo-group">

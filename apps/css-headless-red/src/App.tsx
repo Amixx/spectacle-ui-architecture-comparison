@@ -30,8 +30,12 @@ function App() {
 
         <div className="demo-group">
           <h3>Button</h3>
-          <Skin.Button onPress={() => alert("Clicked!")}>Click Me</Skin.Button>
-          <Skin.Button isDisabled>Disabled</Skin.Button>
+          <div className="button-group">
+            <Skin.Button onPress={() => alert("Clicked!")}>
+              Click Me
+            </Skin.Button>
+            <Skin.Button isDisabled>Disabled</Skin.Button>
+          </div>
         </div>
 
         <div className="demo-group">
