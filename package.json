@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "dev:css-headless": "cd apps/css-headless-base && bun run dev & cd apps/css-headless-red && bun run dev --port 5174",
-    "dev:css-styled": "cd apps/css-styled && bun run dev",
+    "dev:css-styled": "cd apps/css-styled-base && bun run dev & cd apps/css-styled-red && bun run dev --port 5174",
     "dev:tailwind-headless": "cd apps/tailwind-headless && bun run dev",
     "dev:tailwind-styled": "cd apps/tailwind-styled && bun run dev",
     "dev:vanilla-extract-headless": "cd apps/vanilla-extract-headless && bun run dev",

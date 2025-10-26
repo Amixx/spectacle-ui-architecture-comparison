@@ -1,0 +1,19 @@
+{
+  "name": "ui-components-styled",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-aria": "^3.44.0",
+    "react-dom": "^19.1.1",
+    "react-stately": "^3.42.0"
+  },
+  "devDependencies": {
+    "@react-types/shared": "^3.32.1",
+    "@types/react": "^19.1.16",
+    "typescript": "~5.9.3"
+  }
+}

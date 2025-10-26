@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Item } from "react-stately";
-import { FontConfig } from "ui-components";
+import { FontConfig } from "ui-components-headless";
 import * as Skin from "./skin";
 import "./reset.css";
 import "./themes.css";

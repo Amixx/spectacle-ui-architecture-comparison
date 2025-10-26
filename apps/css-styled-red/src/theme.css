@@ -1,0 +1,24 @@
+:root {
+  --font-family: "Inter", system-ui, -apple-system, sans-serif;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  
+  --color-primary: #dc2626;
+  --color-primary-hover: #b91c1c;
+  --color-bg: #ffffff;
+  --color-bg-hover: #fef2f2;
+  --color-text: #1f2937;
+  --color-text-secondary: #991b1b;
+  --color-border: #fca5a5;
+  --color-border-focus: #dc2626;
+  --color-disabled: #9ca3af;
+  
+  --border-radius: 6px;
+  --border-width: 1px;
+  --transition: 0.2s;
+}

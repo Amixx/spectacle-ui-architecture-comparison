@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Item } from "react-stately";
 import { FontConfig } from "ui-components-headless";
-import * as Skin from "./skin";
+import { Button, Input, Select } from "ui-components-styled";
+import "./theme.css";
 import "./reset.css";
-import "./themes.css";
 import "./App.css";
 
 function App() {
@@ -17,9 +17,9 @@ function App() {
   });
 
   return (
-    <div className="app" data-theme="red">
+    <div className="app">
       <div className="skin-switcher">
-        <h3>CSS Headless Architecture - Red Theme</h3>
+        <h3>CSS Styled Architecture - Red Theme</h3>
         <a href="http://localhost:5173" className="theme-link">
           Switch to Base Theme →
         </a>
@@ -30,13 +30,13 @@ function App() {
 
         <div className="demo-group">
           <h3>Button</h3>
-          <Skin.Button onPress={() => alert("Clicked!")}>Click Me</Skin.Button>
-          <Skin.Button isDisabled>Disabled</Skin.Button>
+          <Button onPress={() => alert("Clicked!")}>Click Me</Button>
+          <Button isDisabled>Disabled</Button>
         </div>
 
         <div className="demo-group">
           <h3>Input</h3>
-          <Skin.Input
+          <Input
             label="Name"
             value={demoInputValue}
             onChange={setDemoInputValue}
@@ -46,11 +46,11 @@ function App() {
 
         <div className="demo-group">
           <h3>Select</h3>
-          <Skin.Select label="Choose option" placeholder="Select...">
+          <Select label="Choose option" placeholder="Select...">
             <Item key="option1">Option 1</Item>
             <Item key="option2">Option 2</Item>
             <Item key="option3">Option 3</Item>
-          </Skin.Select>
+          </Select>
         </div>
       </div>
 
@@ -61,8 +61,8 @@ function App() {
           onTextChange={setTextValue}
           fontConfig={fontConfig}
           onFontConfigChange={setFontConfig}
-          Input={Skin.Input}
-          Select={Skin.Select}
+          Input={Input}
+          Select={Select}
           className="font-config"
         />
 

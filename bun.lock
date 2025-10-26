@@ -20,20 +20,15 @@
         "react-aria": "^3.44.0",
         "react-dom": "^19.1.1",
         "react-stately": "^3.42.0",
-        "ui-components": "workspace:*",
+        "ui-components-headless": "workspace:*",
       },
       "devDependencies": {
-        "@eslint/js": "^9.36.0",
         "@types/node": "^24.6.0",
         "@types/react": "^19.1.16",
         "@types/react-dom": "^19.1.9",
         "@vitejs/plugin-react": "^5.0.4",
-        "eslint": "^9.36.0",
-        "eslint-plugin-react-hooks": "^5.2.0",
-        "eslint-plugin-react-refresh": "^0.4.22",
         "globals": "^16.4.0",
         "typescript": "~5.9.3",
-        "typescript-eslint": "^8.45.0",
         "vite": "^7.1.7",
       },
     },
@@ -45,25 +40,77 @@
         "react-aria": "^3.44.0",
         "react-dom": "^19.1.1",
         "react-stately": "^3.42.0",
-        "ui-components": "workspace:*",
+        "ui-components-headless": "workspace:*",
       },
       "devDependencies": {
-        "@eslint/js": "^9.36.0",
         "@types/node": "^24.6.0",
         "@types/react": "^19.1.16",
         "@types/react-dom": "^19.1.9",
         "@vitejs/plugin-react": "^5.0.4",
-        "eslint": "^9.36.0",
-        "eslint-plugin-react-hooks": "^5.2.0",
-        "eslint-plugin-react-refresh": "^0.4.22",
         "globals": "^16.4.0",
         "typescript": "~5.9.3",
-        "typescript-eslint": "^8.45.0",
         "vite": "^7.1.7",
       },
     },
-    "apps/ui-components": {
-      "name": "ui-components",
+    "apps/css-styled-base": {
+      "name": "css-styled",
+      "version": "0.0.0",
+      "dependencies": {
+        "react": "^19.1.1",
+        "react-aria": "^3.44.0",
+        "react-dom": "^19.1.1",
+        "react-stately": "^3.42.0",
+        "ui-components-headless": "workspace:*",
+        "ui-components-styled": "workspace:*",
+      },
+      "devDependencies": {
+        "@types/node": "^24.6.0",
+        "@types/react": "^19.1.16",
+        "@types/react-dom": "^19.1.9",
+        "@vitejs/plugin-react": "^5.0.4",
+        "globals": "^16.4.0",
+        "typescript": "~5.9.3",
+        "vite": "^7.1.7",
+      },
+    },
+    "apps/css-styled-red": {
+      "name": "css-styled-red",
+      "version": "0.0.0",
+      "dependencies": {
+        "react": "^19.1.1",
+        "react-aria": "^3.44.0",
+        "react-dom": "^19.1.1",
+        "react-stately": "^3.42.0",
+        "ui-components-headless": "workspace:*",
+        "ui-components-styled": "workspace:*",
+      },
+      "devDependencies": {
+        "@types/node": "^24.6.0",
+        "@types/react": "^19.1.16",
+        "@types/react-dom": "^19.1.9",
+        "@vitejs/plugin-react": "^5.0.4",
+        "globals": "^16.4.0",
+        "typescript": "~5.9.3",
+        "vite": "^7.1.7",
+      },
+    },
+    "apps/ui-components-headless": {
+      "name": "ui-components-headless",
+      "version": "0.0.0",
+      "dependencies": {
+        "react": "^19.1.1",
+        "react-aria": "^3.44.0",
+        "react-dom": "^19.1.1",
+        "react-stately": "^3.42.0",
+      },
+      "devDependencies": {
+        "@react-types/shared": "^3.32.1",
+        "@types/react": "^19.1.16",
+        "typescript": "~5.9.3",
+      },
+    },
+    "apps/ui-components-styled": {
+      "name": "ui-components-styled",
       "version": "0.0.0",
       "dependencies": {
         "react": "^19.1.1",
@@ -559,6 +606,10 @@
 
     "css-headless-red": ["css-headless-red@workspace:apps/css-headless-red"],
 
+    "css-styled": ["css-styled@workspace:apps/css-styled-base"],
+
+    "css-styled-red": ["css-styled-red@workspace:apps/css-styled-red"],
+
     "csstype": ["csstype@3.1.3", "", {}, "sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw=="],
 
     "debug": ["debug@4.4.3", "", { "dependencies": { "ms": "^2.1.3" } }, "sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA=="],
@@ -753,7 +804,9 @@
 
     "typescript-eslint": ["typescript-eslint@8.46.2", "", { "dependencies": { "@typescript-eslint/eslint-plugin": "8.46.2", "@typescript-eslint/parser": "8.46.2", "@typescript-eslint/typescript-estree": "8.46.2", "@typescript-eslint/utils": "8.46.2" }, "peerDependencies": { "eslint": "^8.57.0 || ^9.0.0", "typescript": ">=4.8.4 <6.0.0" } }, "sha512-vbw8bOmiuYNdzzV3lsiWv6sRwjyuKJMQqWulBOU7M0RrxedXledX8G8kBbQeiOYDnTfiXz0Y4081E1QMNB6iQg=="],
 
-    "ui-components": ["ui-components@workspace:apps/ui-components"],
+    "ui-components-headless": ["ui-components-headless@workspace:apps/ui-components-headless"],
+
+    "ui-components-styled": ["ui-components-styled@workspace:apps/ui-components-styled"],
 
     "undici-types": ["undici-types@7.16.0", "", {}, "sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw=="],
 

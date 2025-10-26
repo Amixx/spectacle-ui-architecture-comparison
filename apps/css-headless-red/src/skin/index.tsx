@@ -2,7 +2,7 @@ import {
   Button as BaseButton,
   Input as BaseInput,
   Select as BaseSelect,
-} from "ui-components";
+} from "ui-components-headless";
 import buttonStyles from "./Button.module.css";
 import inputStyles from "./Input.module.css";
 import selectStyles from "./Select.module.css";

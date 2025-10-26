@@ -1,5 +1,5 @@
 {
-  "name": "css-headless-red",
+  "name": "css-styled-red",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,7 +13,8 @@
     "react-aria": "^3.44.0",
     "react-dom": "^19.1.1",
     "react-stately": "^3.42.0",
-    "ui-components-headless": "workspace:*"
+    "ui-components-headless": "workspace:*",
+    "ui-components-styled": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^24.6.0",
