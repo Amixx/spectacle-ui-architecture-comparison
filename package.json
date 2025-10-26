@@ -5,12 +5,12 @@
     "apps/*"
   ],
   "scripts": {
-    "dev:css-headless": "cd apps/css-headless-base && bun run dev & cd apps/css-headless-red && bun run dev --port 5174",
-    "dev:css-styled": "cd apps/css-styled-base && bun run dev & cd apps/css-styled-red && bun run dev --port 5174",
-    "dev:tailwind-headless": "cd apps/tailwind-headless-base && bun run dev & cd apps/tailwind-headless-red && bun run dev --port 5174",
-    "dev:tailwind-styled": "cd apps/tailwind-styled-base && bun run dev & cd apps/tailwind-styled-red && bun run dev --port 5174",
-    "dev:vanilla-extract-headless": "cd apps/vanilla-extract-headless-base && bun run dev & cd apps/vanilla-extract-headless-red && bun run dev --port 5174",
-    "dev:vanilla-extract-styled": "cd apps/vanilla-extract-styled-base && bun run dev & cd apps/vanilla-extract-styled-red && bun run dev --port 5174",
+    "dev:css-headless": "cd apps/css-headless-base && bun run dev & cd apps/css-headless-red && bun run dev",
+    "dev:css-styled": "cd apps/css-styled-base && bun run dev & cd apps/css-styled-red && bun run dev",
+    "dev:tailwind-headless": "cd apps/tailwind-headless-base && bun run dev & cd apps/tailwind-headless-red && bun run dev",
+    "dev:tailwind-styled": "cd apps/tailwind-styled-base && bun run dev & cd apps/tailwind-styled-red && bun run dev",
+    "dev:vanilla-extract-headless": "cd apps/vanilla-extract-headless-base && bun run dev & cd apps/vanilla-extract-headless-red && bun run dev",
+    "dev:vanilla-extract-styled": "cd apps/vanilla-extract-styled-base && bun run dev & cd apps/vanilla-extract-styled-red && bun run dev",
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {

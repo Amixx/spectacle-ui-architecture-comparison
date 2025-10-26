@@ -13,7 +13,6 @@
     "react-aria": "^3.44.0",
     "react-dom": "^19.1.1",
     "react-stately": "^3.42.0",
-    "ui-components-headless": "workspace:*",
     "ui-components-styled": "workspace:*"
   },
   "devDependencies": {
